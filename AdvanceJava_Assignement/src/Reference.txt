@@ -1,0 +1,6 @@
+Project starts from Main.java 
+  *Employee.java is a model for employee table in database  
+  *MysqlConnector.java provides the Mysql connection Object
+  *ExportEmployeeToDatabase.java extracts the data from Employeeinput.xml and insert it into database
+  *ImportEmployeeFromDatabase.java takes the data from database and insert it into Employeeoutput.xml
+  
