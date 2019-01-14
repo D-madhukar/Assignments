@@ -19,7 +19,8 @@ a)
     course_id numeric(4),
     foreign key (stud_id) references student(id),
     foreign key(course_id) references course(course_id));
-
+                                             
+    Student Table
     +-----+--------+----------------------+
     | id  | name   | email                |
     +-----+--------+----------------------+
@@ -28,7 +29,7 @@ a)
     | 102 | lucky  | luckyemail@gmail.com |
     | 103 | dev    | devc++@gmail.com     |
     +-----+--------+----------------------+
-
+    Course Table
     +-----------+-------------+------------+
     | course_id | course_name | course_fee |
     +-----------+-------------+------------+
@@ -37,7 +38,7 @@ a)
     |      1902 | ANGULAR     |          0 |
     |      1903 | J2EE        |          0 |
     +-----------+-------------+------------+
-
+    Professors Table
     +--------------+----------------+-----------+
     | professor_id | professor_name | course_id |
     +--------------+----------------+-----------+
@@ -46,7 +47,7 @@ a)
     |         1603 | venugoapl      |      1900 |
     |         1604 | karthik        |      1903 |
     +--------------+----------------+-----------+
-
+    Enrollment Table
     +---------+-----------+
     | stud_id | course_id |
     +---------+-----------+
@@ -56,6 +57,7 @@ a)
     |     101 |      1902 |
     |     101 |      1901 |
     |     102 |      1900 |
+    |     102 |      1902 |                              
     |     103 |      1902 |
     |     103 |      1900 |
     +---------+-----------+
@@ -98,8 +100,8 @@ c)
         END LOOP;  
     END$$
 
-    mysql>call getDetails(102);
-    for student_id=102;
+    mysql>call getDetails(103);
+    for student_id=103;
     +--------------+----------------+
     | professor_id | professor_name |
     +--------------+----------------+
